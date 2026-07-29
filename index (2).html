@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velelo Stay · The Velelo Villa, Bloemfontein</title>
+<meta name="description" content="Book The Velelo Villa — a private self-catering villa in Willows, Bloemfontein. Sleeps 6, private pool, from R1 950/night. Hosted by Rethabile Velelo.">
+<meta name="author" content="Rethabile Velelo">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://velelohotel.co.za/">
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Velelo Stay · The Velelo Villa, Bloemfontein">
+<meta property="og:description" content="A private self-catering villa in Willows, Bloemfontein. Sleeps 6, private pool, from R1 950/night.">
+<meta property="og:url" content="https://velelohotel.co.za/">
+<meta property="og:image" content="https://velelohotel.co.za/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --mahogany:#3a0f10;--mahogany-deep:#1f0809;--wine:#5c1a1c;
+    --gold:#d9a441;--gold-soft:#e8c77e;--champagne:#f4e6c8;--cream:#faf4e8;
+    --glass:rgba(255,246,230,0.08);--glass-strong:rgba(255,246,230,0.14);
+    --stroke:rgba(232,199,126,0.28);--ok:#7bbf8a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Outfit',sans-serif;background:var(--mahogany-deep);color:var(--cream);overflow-x:hidden;position:relative}
+  .liquid-bg{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+  .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;animation:float 20s ease-in-out infinite}
+  .blob.b1{width:60vw;height:60vw;background:radial-gradient(circle,#7a2427,transparent 70%);top:-15%;left:-12%}
+  .blob.b2{width:50vw;height:50vw;background:radial-gradient(circle,#d9a441,transparent 70%);bottom:-20%;right:-12%;opacity:.26;animation-delay:-7s}
+  .blob.b3{width:38vw;height:38vw;background:radial-gradient(circle,#5c1a1c,transparent 70%);top:45%;left:30%;animation-delay:-13s}
+  @keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(4vw,-3vw) scale(1.08)}66%{transform:translate(-3vw,4vw) scale(.95)}}
+  .wrap{position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:0 22px}
+  .glass{background:var(--glass);backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%);border:1px solid var(--stroke);box-shadow:0 8px 40px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.12)}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:400;line-height:1.08}
+  .eyebrow{font-size:.7rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-soft);font-weight:500}
+
+  nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:60;width:min(1120px,92vw);display:flex;align-items:center;justify-content:space-between;padding:13px 24px;border-radius:20px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:'Fraunces',serif;font-size:1.3rem;color:var(--cream)}
+  .brand span{color:var(--gold)}
+  .logo{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--gold-soft),var(--wine));display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(217,164,65,.3),inset 0 1px 0 rgba(255,255,255,.25);flex-shrink:0}
+  .logo svg{width:20px;height:20px}
+  /* icon base */
+  .ic-svg{width:20px;height:20px;stroke:var(--gold-soft);stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+  .nav-right{display:flex;align-items:center;gap:22px}
+  .nav-right a{color:var(--champagne);text-decoration:none;font-size:.9rem;opacity:.85;transition:.3s}
+  .nav-right a:hover{opacity:1;color:var(--gold-soft)}
+  .pill{padding:8px 16px;border-radius:12px;background:linear-gradient(135deg,var(--gold-soft),var(--gold));color:var(--mahogany-deep);font-weight:600;font-size:.82rem;cursor:pointer;border:none;font-family:'Outfit'}
+
+  /* HERO GALLERY */
+  header{padding:120px 0 30px}
+  .titlebar{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;margin-bottom:20px}
+  .titlebar h1{font-size:clamp(2.2rem,5vw,3.6rem)}
+  .titlebar .meta{color:rgba(250,244,232,.72);font-size:.92rem;margin-top:8px}
+  .titlebar .meta b{color:var(--gold-soft);font-weight:500}
+  .rating{display:flex;align-items:center;gap:8px;font-size:.95rem;color:var(--champagne)}
+  .gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:200px 200px;gap:12px;border-radius:26px;overflow:hidden}
+  .gallery div{background-size:cover;background-position:center;border-radius:16px}
+  .gallery .g1{grid-row:1/3}
+  @media(max-width:760px){.gallery{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px}.gallery .g1{grid-row:auto;grid-column:1/3}}
+
+  /* BODY LAYOUT */
+  .layout{display:grid;grid-template-columns:1.7fr 1fr;gap:34px;margin-top:44px;align-items:start}
+  @media(max-width:900px){.layout{grid-template-columns:1fr}}
+
+  .sec{padding:26px 0;border-bottom:1px solid rgba(232,199,126,.14)}
+  .sec h2{font-size:1.7rem;margin-bottom:14px}
+  .sec p{color:rgba(250,244,232,.78);line-height:1.75;font-weight:300}
+  .features{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+  .feat{display:flex;gap:13px;align-items:center;padding:14px;border-radius:14px;background:var(--glass-strong);border:1px solid var(--stroke)}
+  .feat .ic-svg{width:22px;height:22px}
+  .feat span{font-size:.92rem;color:var(--champagne)}
+  .host{display:flex;align-items:center;gap:16px;margin-top:6px}
+  .host .av{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--gold-soft),var(--wine));display:flex;align-items:center;justify-content:center;font-family:'Fraunces';font-size:1.3rem;color:var(--mahogany-deep)}
+  .host b{font-weight:500;color:var(--cream)}
+  .host small{color:rgba(250,244,232,.6);display:block;margin-top:2px}
+
+  /* BOOKING CARD */
+  .book{position:sticky;top:100px;border-radius:24px;padding:26px}
+  .book .price{display:flex;align-items:baseline;gap:8px;margin-bottom:18px}
+  .book .price b{font-family:'Fraunces';font-size:2rem;color:var(--cream)}
+  .book .price span{color:rgba(250,244,232,.65);font-size:.92rem}
+  .field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+  .field label{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft)}
+  .dates{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  input,select{padding:13px 14px;border-radius:12px;border:1px solid var(--stroke);background:var(--glass-strong);color:var(--cream);font-family:'Outfit';font-size:.92rem;outline:none;width:100%}
+  input::placeholder{color:rgba(244,230,200,.5)}
+  input[type=date]{color-scheme:dark}
+  .summary{margin:8px 0 16px;padding-top:14px;border-top:1px solid rgba(232,199,126,.16)}
+  .row{display:flex;justify-content:space-between;font-size:.9rem;color:rgba(250,244,232,.8);margin-bottom:8px;font-weight:300}
+  .row.total{font-size:1.05rem;color:var(--cream);font-weight:500;border-top:1px solid rgba(232,199,126,.16);padding-top:12px;margin-top:4px}
+  .row.total b{font-family:'Fraunces';color:var(--gold-soft)}
+  .btn-book{width:100%;padding:16px;border-radius:14px;border:none;background:linear-gradient(135deg,var(--gold-soft),var(--gold));color:var(--mahogany-deep);font-weight:600;font-size:1rem;cursor:pointer;font-family:'Outfit';transition:.3s}
+  .btn-book:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(217,164,65,.4)}
+  .btn-book:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
+  .msg{margin-top:12px;font-size:.85rem;text-align:center;min-height:20px}
+  .msg.err{color:#e8a0a0}
+  .msg.ok{color:var(--ok)}
+  .tiny{text-align:center;font-size:.78rem;color:rgba(232,199,126,.55);margin-top:8px}
+
+  /* BOOKINGS LEDGER */
+  .ledger{margin-top:44px}
+  .ledger h2{font-size:1.7rem;margin-bottom:18px}
+  .bk{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-radius:14px;margin-bottom:10px;font-size:.92rem}
+  .bk .who{color:var(--cream);font-weight:500}
+  .bk .when{color:rgba(250,244,232,.65);font-size:.85rem;margin-top:3px;font-weight:300}
+  .bk .amt{color:var(--gold-soft);font-family:'Fraunces';font-size:1.1rem}
+  .bk .ref{font-size:.72rem;color:rgba(232,199,126,.5);letter-spacing:.1em}
+  .empty{color:rgba(250,244,232,.5);font-style:italic;font-weight:300}
+
+  footer{margin-top:60px;padding:50px 0 30px}
+  .foot-inner{border-radius:26px;padding:44px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
+  .foot-inner .brand{font-size:1.5rem;margin-bottom:14px;display:block}
+  .foot-inner p{color:rgba(250,244,232,.68);font-weight:300;line-height:1.7;font-size:.9rem}
+  .foot-col h4{font-family:'Fraunces';font-size:1.05rem;margin-bottom:16px;color:var(--gold-soft)}
+  .foot-col a,.foot-col p{display:block;color:rgba(250,244,232,.72);text-decoration:none;font-size:.9rem;margin-bottom:9px;font-weight:300;transition:.3s}
+  .foot-col a:hover{color:var(--gold-soft)}
+  .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:22px 8px 0;font-size:.8rem;color:rgba(232,199,126,.55)}
+  .foot-bottom .sig{color:var(--gold-soft)}
+  @media(max-width:760px){.foot-inner{grid-template-columns:1fr;gap:26px}}
+</style>
+</head>
+<body>
+<div class="liquid-bg"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+
+<div class="wrap">
+<nav class="glass">
+  <div class="brand">
+    <span class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#1f0809" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/><path d="M9 10h.01"/><path d="M15 10h.01"/></svg>
+    </span>
+    Velelo<span>.</span> Stay
+  </div>
+  <div class="nav-right">
+    <a href="#about">About</a>
+    <a href="#reserve">Reserve</a>
+    <button class="pill" onclick="document.getElementById('reserve').scrollIntoView({behavior:'smooth'})">Book Now</button>
+  </div>
+</nav>
+
+<header>
+  <div class="titlebar">
+    <div>
+      <div class="eyebrow">Entire villa · Bloemfontein</div>
+      <h1>The Velelo Villa</h1>
+      <div class="meta"><b>Willows, Bloemfontein</b> · Free State · Sleeps 6 · 3 bedrooms · 2 baths</div>
+    </div>
+    <div class="rating">★ 4.97 · <span style="opacity:.7">128 reviews</span></div>
+  </div>
+  <div class="gallery">
+    <div class="g1" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80')"></div>
+    <div style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80')"></div>
+    <div style="background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80')"></div>
+    <div style="background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80')"></div>
+    <div style="background-image:url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80')"></div>
+  </div>
+</header>
+
+<div class="layout">
+  <div class="left">
+    <div class="sec" id="about">
+      <h2>A warm villa in the city of roses</h2>
+      <p>Wrapped in mahogany tones and golden light, the Velelo Villa is a private three-bedroom retreat in the leafy Willows suburb. Wake to garden birdsong, spend afternoons by the pool, and end your day around a fire under Free State stars. Ideal for families, couples and small groups who want space to breathe.</p>
+    </div>
+
+    <div class="sec">
+      <h2>What this place offers</h2>
+      <div class="features">
+        <div class="feat"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M2 9V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3"/><path d="M2 11a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5H2z"/><path d="M4 16v3"/><path d="M20 16v3"/></svg><span>3 bedrooms · sleeps 6</span></div>
+        <div class="feat"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M2 12h20"/><path d="M2 17h20"/><path d="M4 17v-5a3 3 0 0 1 6 0"/><path d="M14 17v-5a3 3 0 0 1 6 0"/><circle cx="7" cy="6" r="1.5"/></svg><span>Private pool</span></div>
+        <div class="feat"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M5 13a10 10 0 0 1 14 0"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M2 9.5a15 15 0 0 1 20 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg><span>Fast fibre Wi-Fi</span></div>
+        <div class="feat"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg><span>Braai / fireplace</span></div>
+        <div class="feat"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M19 17h2l-1.5-5.5a2 2 0 0 0-1.9-1.5H6.4a2 2 0 0 0-1.9 1.5L3 17h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M9 17h6"/></svg><span>Secure parking</span></div>
+        <div class="feat"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M8 2v7c0 1.1-.9 2-2 2s-2-.9-2-2V2"/><path d="M6 2v20"/><path d="M18 2a3 3 0 0 0-3 3v7h3"/><path d="M18 2v20"/></svg><span>Full equipped kitchen</span></div>
+        <div class="feat"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 2v20"/><path d="M12 6l4-3"/><path d="M12 6L8 3"/><path d="M12 12l5-2.5"/><path d="M12 12L7 9.5"/><path d="M2 12h20"/><path d="M6 12l-3 4"/><path d="M18 12l3 4"/></svg><span>Air conditioning</span></div>
+        <div class="feat"><svg class="ic-svg" viewBox="0 0 24 24"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10z"/></svg><span>Pet friendly</span></div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <h2>Meet your host</h2>
+      <div class="host">
+        <div class="av">RV</div>
+        <div>
+          <b>Rethabile Velelo · Superhost</b>
+          <small>Hosting since 2024 · Responds within an hour</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="ledger">
+      <h2>Recent reservations</h2>
+      <div id="bookingList"><p class="empty">Loading reservations…</p></div>
+    </div>
+  </div>
+
+  <!-- BOOKING -->
+  <aside id="reserve">
+    <div class="book glass">
+      <div class="price"><b>R1 950</b><span>/ night</span></div>
+
+      <div class="field">
+        <label>Full name</label>
+        <input type="text" id="guestName" placeholder="Your name">
+      </div>
+      <div class="dates">
+        <div class="field"><label>Check in</label><input type="date" id="checkIn"></div>
+        <div class="field"><label>Check out</label><input type="date" id="checkOut"></div>
+      </div>
+      <div class="field">
+        <label>Guests</label>
+        <select id="guests">
+          <option value="1">1 guest</option><option value="2" selected>2 guests</option>
+          <option value="3">3 guests</option><option value="4">4 guests</option>
+          <option value="5">5 guests</option><option value="6">6 guests</option>
+        </select>
+      </div>
+
+      <div class="summary" id="summary" style="display:none">
+        <div class="row"><span id="calcNights">R1 950 × 0 nights</span><span id="calcBase">R0</span></div>
+        <div class="row"><span>Cleaning fee</span><span>R350</span></div>
+        <div class="row"><span>Service fee</span><span id="calcService">R0</span></div>
+        <div class="row total"><span>Total</span><b id="calcTotal">R0</b></div>
+      </div>
+
+      <button class="btn-book" id="bookBtn">Reserve</button>
+      <div class="msg" id="msg"></div>
+      <div class="tiny">You won't be charged yet · secure your dates</div>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="foot-inner glass">
+    <div>
+      <span class="brand">Velelo<span style="color:var(--gold)">.</span> Stay</span>
+      <p>A boutique self-catering villa in Bloemfontein, Free State — warmth, design and quiet luxury, hosted with care.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <a href="tel:0646785516">064 678 5516</a>
+      <a href="mailto:info@velelohotel.co.za">info@velelohotel.co.za</a>
+      <p>Willows, Bloemfontein<br>Free State, South Africa</p>
+    </div>
+    <div class="foot-col">
+      <h4>Explore</h4>
+      <a href="#about">The Villa</a>
+      <a href="#reserve">Book a Stay</a>
+      <a href="#">House Rules</a>
+      <a href="#">Cancellation</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div>© 2026 Velelo Stay · All rights reserved</div>
+    <div class="sig">Designed by Rethabile Velelo</div>
+  </div>
+</footer>
+</div>
+
+<script>
+const RATE=1950, CLEANING=350;
+const $=id=>document.getElementById(id);
+const fmt=n=>'R'+n.toLocaleString('en-ZA');
+
+function nights(){
+  const a=$('checkIn').value, b=$('checkOut').value;
+  if(!a||!b) return 0;
+  const d=(new Date(b)-new Date(a))/86400000;
+  return d>0?Math.round(d):0;
+}
+function recalc(){
+  const n=nights();
+  const sum=$('summary');
+  if(n<=0){sum.style.display='none';return 0;}
+  sum.style.display='block';
+  const base=RATE*n, service=Math.round(base*0.1), total=base+CLEANING+service;
+  $('calcNights').textContent=`${fmt(RATE)} × ${n} night${n>1?'s':''}`;
+  $('calcBase').textContent=fmt(base);
+  $('calcService').textContent=fmt(service);
+  $('calcTotal').textContent=fmt(total);
+  return total;
+}
+['checkIn','checkOut'].forEach(id=>$(id).addEventListener('change',recalc));
+
+// set min dates to today
+const today=new Date().toISOString().split('T')[0];
+$('checkIn').min=today; $('checkOut').min=today;
+
+async function loadBookings(){
+  const list=$('bookingList');
+  try{
+    const res=await window.storage.list('booking:');
+    if(!res||!res.keys||res.keys.length===0){
+      list.innerHTML='<p class="empty">No reservations yet — be the first to book.</p>';return;
+    }
+    const items=[];
+    for(const k of res.keys){
+      try{const r=await window.storage.get(k); if(r) items.push(JSON.parse(r.value));}catch(e){}
+    }
+    items.sort((a,b)=>b.created-a.created);
+    list.innerHTML=items.map(b=>`
+      <div class="bk glass">
+        <div>
+          <div class="who">${b.name} · ${b.guests} guest${b.guests>1?'s':''}</div>
+          <div class="when">${b.checkIn} → ${b.checkOut} · ${b.nights} night${b.nights>1?'s':''}</div>
+          <div class="ref">REF ${b.ref}</div>
+        </div>
+        <div class="amt">${fmt(b.total)}</div>
+      </div>`).join('');
+  }catch(e){
+    list.innerHTML='<p class="empty">Could not load reservations.</p>';
+  }
+}
+
+$('bookBtn').addEventListener('click',async()=>{
+  const msg=$('msg'); msg.className='msg';
+  const name=$('guestName').value.trim();
+  const ci=$('checkIn').value, co=$('checkOut').value;
+  const n=nights();
+  if(!name){msg.className='msg err';msg.textContent='Please enter your name.';return;}
+  if(!ci||!co){msg.className='msg err';msg.textContent='Please choose your dates.';return;}
+  if(n<=0){msg.className='msg err';msg.textContent='Check-out must be after check-in.';return;}
+
+  const total=recalc();
+  const ref='VLO-'+Math.random().toString(36).slice(2,7).toUpperCase();
+  const booking={ref,name,checkIn:ci,checkOut:co,guests:+$('guests').value,nights:n,total,created:Date.now()};
+
+  const btn=$('bookBtn'); btn.disabled=true; btn.textContent='Reserving…';
+  try{
+    await window.storage.set('booking:'+booking.created+'_'+ref, JSON.stringify(booking));
+    msg.className='msg ok';
+    msg.textContent=`Booked! Reference ${ref} · ${fmt(total)}. Opening your email to confirm…`;
+    sendBookingEmail(booking);
+    $('guestName').value=''; $('checkIn').value=''; $('checkOut').value='';
+    recalc(); loadBookings();
+  }catch(e){
+    msg.className='msg err'; msg.textContent='Something went wrong saving your booking.';
+  }finally{
+    btn.disabled=false; btn.textContent='Reserve';
+  }
+});
+
+// Notification email routes to the business inbox (velelotechnology@gmail.com).
+// Public-facing address stays info@velelohotel.co.za.
+const NOTIFY_EMAIL='velelotechnology@gmail.com';
+function sendBookingEmail(b){
+  const subject=`New Velelo Stay booking · ${b.ref}`;
+  const body=
+`New reservation received for The Velelo Villa
+
+Reference: ${b.ref}
+Guest: ${b.name}
+Check in: ${b.checkIn}
+Check out: ${b.checkOut}
+Nights: ${b.nights}
+Guests: ${b.guests}
+Total: ${fmt(b.total)}
+
+— Sent from velelohotel.co.za`;
+  const url=`mailto:${NOTIFY_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href=url;
+}
+
+loadBookings();
+</script>
+</body>
+</html>
